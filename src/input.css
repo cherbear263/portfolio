@@ -1,0 +1,111 @@
+@tailwind base;
+.body {
+  margin: 0;
+  color: white;
+  background: #202731;
+}
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+  padding: 75px 10vw;
+}
+nav ul {
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  letter-spacing: 0.15em;
+  font-weight: 100;
+}
+
+.bg-gradient {
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+  overflow: hidden;
+}
+/* *******************TYPOGRAPHY ************************ */
+.text-light {
+  @apply text-white/80;
+}
+.weight-light {
+  letter-spacing: 0.06em;
+  font-weight: 100;
+}
+.brand {
+  @apply font-sans;
+}
+h1.font-mono {
+  letter-spacing: 0.1em;
+}
+@tailwind components;
+.avatar {
+  max-width: 200px;
+  padding-top: 50px;
+}
+
+@tailwind utilities;
+
+.button {
+  @apply bg-cyan-200 text-cyan-700 p-2
+  hover:bg-cyan-700 hover:text-white rounded-md;
+  transition: 0.25s ease;
+}
+.btn-rt {
+  @apply rounded-l-none hover:bg-sky-300;
+}
+.btn-lt {
+  @apply rounded-r-none bg-cyan-700 text-white hover:bg-sky-300;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-10px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY();
+  }
+  57% {
+    transform: scale(1, 1) translateY(-3px);
+  }
+  64% {
+    transform: scale(1, 1) translateY();
+  }
+  100% {
+    transform: scale(1, 1) translateY();
+  }
+}
+.arrow {
+  background-size: 25%;
+  padding-top: 10vh;
+  align-self: flex-end;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.arrow-bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+.arrow:hover {
+  cursor: pointer;
+}
+
+.icon-list {
+  height: 5em;
+}
