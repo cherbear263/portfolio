@@ -105,7 +105,10 @@ h1.font-mono {
 .arrow:hover {
   cursor: pointer;
 }
-
+.arrow-icon {
+  overflow: hidden;
+  background: url(images/arrow-sm.png) no-repeat 100px center;
+}
 .icon-list {
   height: 5em;
 }

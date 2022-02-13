@@ -743,11 +743,6 @@ h1.font-mono {
   font-family: VT323, click-clack, monospace;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
@@ -761,10 +756,6 @@ h1.font-mono {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .font-semibold {
@@ -804,11 +795,6 @@ h1.font-mono {
 .text-purple-500 {
   --tw-text-opacity: 1;
   color: rgb(168 85 247 / var(--tw-text-opacity));
-}
-
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 .drop-shadow-xl {
@@ -940,6 +926,11 @@ h1.font-mono {
 
 .arrow:hover {
   cursor: pointer;
+}
+
+.arrow-icon {
+  overflow: hidden;
+  background: url(images/arrow-sm.png) no-repeat 100px center;
 }
 
 .icon-list {
